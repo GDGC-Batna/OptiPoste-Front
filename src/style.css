@@ -78,9 +78,9 @@
 }
 
 @font-face {
-  font-family: 'Microgram';
-  src: url('/src/assets/fonts/Microgram DB Regular.ttf') format('ttf'),
-        url('/src/assets/fonts/Microgram DB Regular.ttf') format('ttf');
+  font-family: "Microgram";
+  src: url("/src/assets/fonts/Microgram DB Regular.ttf") format("ttf"),
+    url("/src/assets/fonts/Microgram DB Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
