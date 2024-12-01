@@ -23,7 +23,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        primary: ["Microgram", "sans-serif"],
+        primary: ["Turkish Microgramma", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -35,8 +35,8 @@ export default {
           DEFAULT: "#22297C",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#FECC0B",
+
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

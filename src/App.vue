@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app appstyling">
     <router-view></router-view>
   </div>
 </template>
@@ -11,5 +11,8 @@ export default {
 </script>
 
 <style scoped>
+.appstyling {
+  font-family: 'Turkish Microgramma', sans-serif;                                             
+}
 /* Add any styles if necessary */
 </style>

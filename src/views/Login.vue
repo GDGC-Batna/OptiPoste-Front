@@ -25,11 +25,11 @@ export default {
 
 <template>
   <div class="background-image h-screen py-52">
-    <div class="flex justify-center items-center space-x-10">
+    <div class="flex justify-center items-center space-x-5">
       <img src="../assets/logo.svg" alt="" />
-      <h1 class="text-4xl font-bold text-white font-primary">OptiPoste</h1>
+      <h1 class="text-4xl text-white font-primary font-bold"><span class="text-secondary">Opti</span> <span class="text-primaryb">Poste</span></h1>
     </div>
-    <div class="max-w-sm mx-auto bg-white p-8 my-5">
+    <div class="max-w-sm mx-auto bg-white p-8 my-5 font-primary">
       <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
       <p class="text-center text-gray-500">Login to your account.</p>
       <form @submit.prevent="login">
@@ -59,8 +59,8 @@ export default {
             >Keep me logged in</label
           >
         </div>
-        <button type="submit" class="w-full bg- text-white py-2 rounded-lg">
-          Login
+        <button type="submit" class="w-full bg-primary text-white py-2 rounded-lg">
+          <router-link to="/dashboard">Login</router-link>
         </button>
       </form>
     </div>

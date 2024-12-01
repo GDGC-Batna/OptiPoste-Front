@@ -30,7 +30,7 @@
       </label>
 
       <div
-        class="mt-4 flex items-center justify-center py-20 bg-[#CCCCCC] mx-auto"
+        class="mt-4 flex items-center justify-center py-5 bg-[#CCCCCC] mx-auto"
         v-if="files.length"
       >
         <div
@@ -70,17 +70,12 @@
       >
         Upload Images
       </button>
-      <button
-        v-else
-        class="bg-white text-black ml-[70%] py-2 px-6 text-sm rounded-lg mt-4"
-      >
-        Uploading...
-      </button>
     </div>
   </div>
-  <div v-else class="flex flex-col justify-center items-center h-[80vh]">
-    Uploading images ...
-    <LoaderCircle class="size-8 text-white animate-spin my-3" />
+  <div v-else class="flex flex-col justify-center items-center h-[50vh]">
+    <span class="text-3xl font-bold uppercase">  Uploading images ...</span>
+  
+    <LoaderCircle class="size-20 text-black animate-spin my-3" />
   </div>
 </template>
 

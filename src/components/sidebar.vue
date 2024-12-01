@@ -4,7 +4,7 @@
       'w-60': showSide,
       'w-20': !showSide,
     }"
-    class="bg-white text-black pr-4 transition-all duration-300 space-y-6"
+    class="bg-white text-black pr-4 transition-all duration-300 space-y-6 font-primary"
   >
     <button
       @click="toggleSideBar"
@@ -47,44 +47,45 @@ import {
   LogOut,
   ArrowLeftToLine,
   ArrowRightToLine,
+  Globe ,
+  Clock,
+  Trash,
+  FileText 
 } from "lucide-vue-next";
 
 export default {
   components: {
-    Activity,
-    PackageCheck,
-    PackagePlus,
-    Users,
-    ArrowRightLeft,
     Settings,
     LogOut,
-    ArrowLeftToLine,
-    ArrowRightToLine,
+    Globe ,
+    Clock,
+    Trash,
+    FileText 
   },
   data() {
     return {
       showSide: true,
       sidebarLinks: [
-        { route: "/dashboard/home", label: "dashboard", icon: Activity },
-        { route: "/dashboard/products", label: "settings", icon: PackageCheck },
+        { route: "/dashboard/home", label: "DASHBOARD"},
+        { route: "/dashboard/products", label: "settings", icon: Settings },
         {
           route: "/dashboard/product/create",
-          label: "All Files",
-          icon: PackagePlus,
+          label: "All Data",
+          icon: Globe ,
         },
-        { route: "/dashboard/users", label: "Recent", icon: Users },
-        { route: "/dashboard/orders", label: "Trash", icon: ArrowRightLeft },
-        { route: "/dashboard/settings", label: "Postal forms", icon: Settings },
-        { route: "/dashboard/settings", label: "Bills", icon: Settings },
+        { route: "/dashboard/users", label: "Recent", icon: Clock },
+        { route: "/dashboard/orders", label: "Trash", icon: Trash },
+        { route: "/dashboard/settings", label: "Postal forms", icon: FileText },
+        { route: "/dashboard/settings", label: "Bills", icon: FileText },
         {
           route: "/dashboard/settings",
           label: "Bank statements",
-          icon: Settings,
+          icon: FileText,
         },
         {
           route: "/dashboard/settings",
           label: "Official letters",
-          icon: Settings,
+          icon: FileText,
         },
       ],
     };
